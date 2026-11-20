@@ -1,0 +1,79 @@
+<!--Reference list
+ OpenAI. 2026. ChatGPT (GPT-5.3). [Large language model]. Available at: https://chatgpt.com/share/69c57007-b674-832b-b86f-59391c6457e4 (Accessed: 25/26 March 2026).
+ ProgrammingKnowledge, 2019. Android Studio Tutorial for Beginners. [video online] Available at: https://youtu.be/h-NcxT697Nk?si=kQuJ9zftIXQh1YvR [Accessed 24/25/26 March 2026].
+ WsCube Tech, 2021. Layouts in Android Studio (XML) | Android UI Design Explained. [video online] Available at: https://youtu.be/PeCOKgAua7A?si=eZabCbsr5ij1t9Lp
+ [Accessed 24/25/26/30 March 2026].
+ -->
+
+    <!-- Main layout for the Social Spark App -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F0FF">
+
+    <!--(ProgrammingKnowledge, 2019)-->
+    <!-- App Title -->
+    <TextView
+        android:text="Social Spark ✨"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"/>
+
+    <!--(ProgrammingKnowledge, 2019)-->
+    <!-- Divider line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B39DDB"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- User name input -->
+    <!--reference (OpenAI,2026)-->
+    <EditText
+        android:id="@+id/nameInput"
+        android:hint="Enter your name(optional)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--was able to code on own therefore no referencing from my understanding view-->
+    <!-- Time input -->
+    <EditText
+        android:id="@+id/timeInput"
+        android:hint="Enter time (Morning, Afternoon...)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Suggestion button -->
+    <Button
+        android:id="@+id/btnSuggest"
+        android:text="Get Suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Output result -->
+    <TextView
+        android:id="@+id/resultText"
+        android:text="Your suggestion will appear here"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+
+
+    <!-- Reset button -->
+
+    <Button
+        android:id="@+id/btnReset"
+        android:text="Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
